@@ -18,7 +18,7 @@
 ## Controls
     # - Look down → Play music
     # - Look up → Pause music
-    # - q → Quit
+    # - q → Quit 
 
 ## Core Concept
 # - Signal detection using facial landmarks
