@@ -1,3 +1,38 @@
+# RockLook — Day 01
+
+# RockLook is a real-time gaze-based music control system using face tracking.
+
+## Features
+# - Control music playback using eye gaze direction
+# - Look down → play music
+# - Look up → pause music
+# - Real-time gaze offset calculation
+# - Visual feedback with status and threshold display
+# - Works with any local audio file (music.mp3)
+
+## Tech Stack
+# - OpenCV
+# - MediaPipe Face Mesh
+# - Pygame (audio playback)
+
+## Controls
+    # - Look down → Play music
+    # - Look up → Pause music
+    # - q → Quit
+
+## Core Concept
+# - Signal detection using facial landmarks
+# - Iris position compared to nose tip defines gaze direction
+# - Threshold-based decision system:
+#     gaze_offset < threshold → trigger action
+
+## Notes
+# - Make sure "music.mp3" is in the same folder
+# - Works best with good lighting and visible eyes
+# - Adjust GAZE_THRESHOLD for sensitivity
+# - Keep your face centered for better accuracy
+
+
 import cv2
 import mediapipe as mp
 import pygame
