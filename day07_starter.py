@@ -1,3 +1,45 @@
+# OrcaSynth — Day 07
+
+# OrcaSynth is a real-time polyphonic synthesizer and oscilloscope using keyboard input for signal generation.
+# Features
+# - Every key generates a waveform at a unique frequency
+# - Multiple keys → real-time chord synthesis (polyphony)
+# - Live waveform visualization (oscilloscope-style)
+# - Supports multiple wave types (sine / square / saw)
+# - Smooth audio with per-frequency phase tracking (no clicks)
+# - Real-time volume control
+
+# Tech Stack
+# - numpy
+# - sounddevice
+# - pygame
+# - Python
+
+# Controls
+# - Any key → play sound
+# - Hold multiple keys → chord
+# - 1 → sine wave
+# - 2 → square wave
+# - 3 → saw wave
+# - ↑ / ↓ → adjust volume
+# - ESC → quit
+
+# Hardware Concept
+# - Signal synthesis (wave generation per input)
+# - Superposition (multiple signals combined into one output)
+# - Constructive & destructive interference
+# - Real-time DSP (Digital Signal Processing)
+# - Oscilloscope visualization of analog-like signals
+
+# Notes
+# - Increasing buffer size reduces audio crackling
+# - High number of keys → waveform approaches noise-like behavior
+# - Phase tracking is required to avoid audio artifacts
+# - Different wave types simulate real synthesizer behavior
+# - System directly mirrors how DACs and speakers operate
+
+
+
 import numpy as np
 import sounddevice as sd
 import pygame
